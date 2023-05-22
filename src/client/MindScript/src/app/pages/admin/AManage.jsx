@@ -352,7 +352,7 @@ const filterData = (nameQuery, idQuery, campusQuery, usersData) => {
         return usersData.filter((d) => {
             const fullName = `${d.first_name} ${d.flast_name} ${d.slast_name}`;
             return (
-                (nameQuery && fullName.toLowerCase().includes(nameQuery.toLowerCase())) ||
+                (nameQuery && fullName.toLowerCase().equals(nameQuery.toLowerCase())) ||
                 (idQuery && d.id.toLowerCase().includes(idQuery.toLowerCase())) ||
                 (campusQuery && d.campus.toLowerCase().includes(campusQuery.toLowerCase()))
             );
