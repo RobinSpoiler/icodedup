@@ -50,7 +50,7 @@ func Code(db *sql.DB) http.HandlerFunc {
 		// Check if code contains forbidden functions
 		// function returns a slice with all the functions that were found
 		forbiddenFuncsFound := findForbiddenFunctions(reqBody.Code, problem.ForbiddenFuncs)
-		if len(forbiddenFuncsFound) != 0 {
+		if len(forbiddenFuncsFound) == 0 {
 			http.Error(w, fmt.Sprintf("Found forbidden functions in code [%s]", strings.Join(forbiddenFuncsFound, ", ")), http.StatusForbidden)
 			return
 		}
