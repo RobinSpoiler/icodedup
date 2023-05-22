@@ -40,7 +40,7 @@ func Homework(mysql *sql.DB) http.HandlerFunc {
 		// Create homework for each one of the given groups
 		for _, group := range req.Groups {
 			// Create ID for individual homework
-			hwID, err := util.GenerateID("H", 19)
+			hwID, err := util.GenerateID("H", 30)
 			if err != nil {
 				tx.Rollback()
 				http.Error(w, "Error creating homework", http.StatusInternalServerError)
