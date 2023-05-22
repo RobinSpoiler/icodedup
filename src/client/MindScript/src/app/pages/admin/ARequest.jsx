@@ -16,7 +16,7 @@ export const ARequest = () => {
         // console.log("Nómina ", schoolID)
     }
     const pages = [
-        {name: 'Gestion de Usuarios', route: '/admin/manage'}, 
+        {name: 'Gestion de Usuarios', route: '/admin/management'}, 
         {name: 'Solicitudes', route: '/admin/request'}, 
         {name: 'Plan de Estudios', route: '/admin/syllabus'}
     ]
@@ -26,7 +26,7 @@ export const ARequest = () => {
     const [requestsData, setRequest] = useState([]);
     useEffect(() => {
         const options = {
-            method: 'GET',
+            method: 'POST',
             headers: {
                 'Accept': 'application/json',
             },
