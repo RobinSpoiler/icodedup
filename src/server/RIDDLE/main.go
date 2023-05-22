@@ -45,7 +45,8 @@ func main() {
 	//Write operations
 	r.HandleFunc("/requestQuestion", write.RequestQuestion(mysqlDB)).Methods("POST")
 	r.HandleFunc("/modQuestionAttempt", write.ModQuestAttempt(mysqlDB)).Methods("POST")
-	r.HandleFunc("/hwQuestionAttempt", write.HwQuestionAttempt(mysqlDB)).Methods("POST")
+	//mutante / 18
+	r.HandleFunc("/declineQuestionRequest", write.HwQuestionAttempt(mysqlDB)).Methods("POST")
 
 	//Delete operations
 	r.HandleFunc("/declineQuestionRequest/{questionID}", remove.DeclineRequest(mysqlDB)).Methods("DELETE")
