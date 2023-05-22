@@ -86,7 +86,7 @@ export const EditHomework = ({ open, close, editData, modules }) => {
 
     return (
         <>
-            {editData != null && editData != undefined
+            {editData == null && editData == undefined
                 ? <Modal
                     id="Modal prrona Editar tarea"
                     open={open}
