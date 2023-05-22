@@ -14,8 +14,7 @@ func Campus(mysqlDB *sql.DB) http.HandlerFunc {
 
 		campusID := mux.Vars(r)["campusID"]
 
-		query := `DELETE FROM campus
-		WHERE id_campus = ?`
+		query := `DELETE FROM campus`
 
 		_, err := mysqlDB.Exec(query, campusID)
 		if err != nil {
