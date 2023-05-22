@@ -16,7 +16,7 @@ export const SHomePage = () => {
         //Desestructuración de user
         const { email, displayName, emailVerified, uid } = user
         //Matrícula A00000000
-        schoolID = (user.email).substring(0, 9).toUpperCase();
+        schoolID = (user.email).substring(0, 9);
         // console.log("Matrícula ", schoolID)
     }
 
