@@ -34,7 +34,7 @@ func Campus(mysqlDB *sql.DB) http.HandlerFunc {
 
 		// All campus' ids must be 3 characters long
 		match, _ := regexp.MatchString("^[A-Z]{3}$", req.ID)
-		if !match {
+		if match {
 			http.Error(w, "Campus ID must be 3 characters long and only contain upper case letters", http.StatusBadRequest)
 			return
 		}
