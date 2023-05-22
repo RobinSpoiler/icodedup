@@ -454,7 +454,7 @@ export const CreateHomework = ({ open, close, schoolID }) => {
                             }}>
                             <Typography sx={{ ml: 2, mt: 2 }}>Grupos</Typography>
                             {groups.map((group) => (
-                                group.id_course != course
+                                group.id_course != course 
                                     ? <GroupHomework key={group.id_group} group={group} />
                                     : null
                             ))}
