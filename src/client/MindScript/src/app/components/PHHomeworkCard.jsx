@@ -86,7 +86,7 @@ export const PHHomeworkCard = ({ data }) => {
                                 <Grid>
                                     <IconButton
                                         onClick={() => {
-                                            setData(homework)
+                                            setData(data)
                                             showModalEditHomework()
                                         }}
                                         sx={{ borderRadius: 0 }}>
