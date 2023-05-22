@@ -2,7 +2,6 @@ package main
 
 import (
 	"database/sql"
-	"elPadrino/RIDDLE/packages/read"
 	"elPadrino/RIDDLE/packages/remove"
 	"elPadrino/RIDDLE/packages/update"
 	"elPadrino/RIDDLE/packages/write"
@@ -40,8 +39,8 @@ func main() {
 	r := mux.NewRouter()
 
 	//Read operations
-	r.HandleFunc("/questions", read.Questions(mysqlDB)).Methods("GET")
-	/* r.HandleFunc("/statusHomework", read.StatusHomework(mysqlDB)).Methods("GET") */
+	/* 	r.HandleFunc("/questions", read.Questions(mysqlDB)).Methods("GET")
+	 */ /* r.HandleFunc("/statusHomework", read.StatusHomework(mysqlDB)).Methods("GET") */
 
 	//Write operations
 	r.HandleFunc("/requestQuestion", write.RequestQuestion(mysqlDB)).Methods("POST")

@@ -1,5 +1,6 @@
 package read
 
+/*
 import (
 	"database/sql"
 	"elPadrino/RIDDLE/packages/structs"
@@ -30,8 +31,6 @@ func Questions(mysqlDB *sql.DB) http.HandlerFunc {
 			return
 		}
 
-		/* 		var res structs.ResultQuestion
-		 */
 		//Tomar primer caracter de un string
 		if req.Assigment[0] == 'M' {
 
@@ -88,3 +87,4 @@ func Questions(mysqlDB *sql.DB) http.HandlerFunc {
 
 	}
 }
+*/

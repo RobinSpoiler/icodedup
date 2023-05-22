@@ -1,5 +1,6 @@
 package util
 
+/*
 import (
 	"database/sql"
 	"elPadrino/RIDDLE/packages/structs"
@@ -30,7 +31,7 @@ func HwQuestions(w http.ResponseWriter, req structs.SelectQuestion, mysqlDB *sql
 	var values []interface{}
 
 	values = append(values, req.Student)
-	values = append(values, req.Assigment) */
+	values = append(values, req.Assigment)
 
 
 }
