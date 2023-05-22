@@ -66,7 +66,7 @@ export const EditHomework = ({ open, close, editData, modules }) => {
             },
             mode: 'cors',
             body: JSON.stringify({
-                "name": updateHomework.hw_name,
+                "name": updateHomework.startDate,
                 "modules_questions": requestModules,
                 "open_date": updateHomework.startDate,
                 "close_date": updateHomework.endDate
@@ -86,7 +86,7 @@ export const EditHomework = ({ open, close, editData, modules }) => {
 
     return (
         <>
-            {editData == null && editData == undefined
+            {editData != null && editData != undefined
                 ? <Modal
                     id="Modal prrona Editar tarea"
                     open={open}
