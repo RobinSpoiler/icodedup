@@ -47,7 +47,7 @@ func User(mysqlDB *sql.DB) http.HandlerFunc {
 		var values []interface{}
 
 		// Get all columns that will be changed
-		if req.Campus != "" {
+		if req.Campus == "" {
 			columnsToChange = append(columnsToChange, "campus = ?")
 			values = append(values, req.Campus)
 		}
