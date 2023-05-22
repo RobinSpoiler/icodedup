@@ -66,7 +66,7 @@ export const EditHomework = ({ open, close, editData, modules }) => {
             },
             mode: 'cors',
             body: JSON.stringify({
-                "name": updateHomework.startDate,
+                "name": updateHomework.hw_name,
                 "modules_questions": requestModules,
                 "open_date": updateHomework.startDate,
                 "close_date": updateHomework.endDate
