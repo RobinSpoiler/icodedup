@@ -58,7 +58,7 @@ export const ModulesLayout = ({ children, home, homeworkData, student, hwBTitle,
                         <Typography sx={{ fontSize: 20, fontWeight: 500, pt: 5, pb: 3 }}>{hwBTitle}</Typography>
 
                         <List>
-                            {student ?
+                            {professor ?
                                 <>
                                     {homeworkData.map((data, index) => (
                                         <SMHomeworkCard key={index} data={data} index={index} />
