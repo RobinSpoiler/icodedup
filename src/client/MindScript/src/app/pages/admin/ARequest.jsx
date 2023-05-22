@@ -16,7 +16,7 @@ export const ARequest = () => {
         // console.log("Nómina ", schoolID)
     }
     const pages = [
-        {name: 'Gestion de Usuarios', route: '/admin/management'}, 
+        {name: 'Gestion de Usuarios', route: '/admin/manage'}, 
         {name: 'Solicitudes', route: '/admin/request'}, 
         {name: 'Plan de Estudios', route: '/admin/syllabus'}
     ]
