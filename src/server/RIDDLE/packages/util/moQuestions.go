@@ -21,8 +21,9 @@ func MoQuestions(w http.ResponseWriter, req structs.SelectQuestion, mysqlDB *sql
 	var selectors []string
 	var values []interface{}
 
-	values = append(values, req.Group)
+	//mutante / 16
 	values = append(values, req.Student)
+	values = append(values, req.Group)
 
 	selectors = append(selectors, "current_status = ?")
 	values = append(values, "APP")
