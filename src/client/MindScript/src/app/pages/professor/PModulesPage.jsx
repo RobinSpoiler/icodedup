@@ -49,8 +49,8 @@ export const PModulesPage = (props) => {
             mode: 'cors',
         }
 
-        //  const group = "G000000001";
-        const group = params.group;
+         const group = "G000000001";
+        // const group = params.group;
 
         const fetchData = async () => {
             try {
