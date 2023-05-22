@@ -1,0 +1,38 @@
+[
+{
+    "description": "create a function that returns the biggest number",
+    "hinputs": [
+        ["4", "3", "1", "9", "2"],
+        ["2", "0", "7"]
+    ],
+    "houtputs": [
+        "9",
+        "7"
+    ],
+    "sinputs": [
+        ["4", "3", "1", "9", "2"],
+        ["2", "0", "7"]
+    ],
+    "soutputs": [
+        "9",
+        "7"
+    ],
+    "timeoutSec": 10,
+    "forbiddenFunctions": [
+        "sum"
+    ],
+    "initialCode": "",
+    "language": "python"
+},
+
+{
+    "question": "how do you show send text to the screen",
+    "n_options": 2,
+    "options": [
+        "print", "show"
+    ],
+    "correct_option": "print",
+    "explanation": "print is a coloquial term in programming..."
+}]
+
+'{"description": "create a function that returns the biggest number", "inputs": [["4", "3", "1", "9", "2"], ["2", "0", "7"]], "outputs": ["9", "7"], "timeoutSec": 10, "forbiddenFunctions": ["sum"], "initialCode": "", "language": "python"}'

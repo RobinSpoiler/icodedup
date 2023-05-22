@@ -1,0 +1,3 @@
+DB
+Update tables columns' names
+Add missing columns
