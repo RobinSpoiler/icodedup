@@ -242,7 +242,7 @@ useEffect(() => {
 // ]
 
 return (
-    <HomeLayout homeworkData={homeworkData} student={true} hwBTitle={'Asignaciones Faltantes'} home={home} pages={pages} >
+    <HomeLayout homeworkData={homeworkData} student={false} hwBTitle={'Asignaciones Faltantes'} home={home} pages={pages} >
         {/* Modales */}
         <CourseRegister open={openModalRegister} close={closeModalRegister} setCount={setCount} count={count} />
 
